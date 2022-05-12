@@ -4,6 +4,13 @@ import RenderFunnelAndPyramidCharts from "./FunnelAndPyramid";
 import RenderGanttOrProjectCharts from "./GanttOrProjectCharts";
 import RenderGuagesAndKpi from "./GuagesAndKPI";
 
+import FusionCharts from 'fusioncharts';
+import Widgets from 'fusioncharts/fusioncharts.widgets';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
+
 function FusionWidgetsXTSuite(props) {
   return (
     <>

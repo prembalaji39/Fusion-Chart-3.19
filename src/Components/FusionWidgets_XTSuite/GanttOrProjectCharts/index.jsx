@@ -10,6 +10,13 @@ import GanttWithWeeklyTask from "./GanttWithWeeklyTask";
 import MachineOperatingSchedule from "./MachineOperatingSchedule";
 import SimpleGanttChart from "./SimpleGanttChart";
 
+import Gantt from 'fusioncharts/fusioncharts.gantt';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import FusionCharts from "fusioncharts";
+
+ReactFC.fcRoot(FusionCharts, Gantt, FusionTheme);
+
 function RenderGanttOrProjectCharts(props) {
   return (
     <>
